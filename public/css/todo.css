@@ -1,0 +1,27 @@
+h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #124c81;
+}
+#task{
+    width: 95%;
+}
+.btn-custom{
+    background-color: #124c81;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.task-list{
+    background-color: #124c81;
+    margin-top: 10px;
+    height: 60px;
+    border-radius: 5px;
+}
+.task-list p{
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   
+}

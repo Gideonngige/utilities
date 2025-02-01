@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TodoController;
 use App\Http\Controllers\GarageController;
+use App\Http\Controllers\WeatherController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -19,3 +20,7 @@ Route::get('/register',[GarageController::class,'registerget'])->name('registerg
 Route::post('/register',[GarageController::class,'register'])->name('register');
 Route::get('/notifications',[GarageController::class,'notifications'])->name('notifications');
 Route::post('/payment',[GarageController::class,'payment'])->name('payment');
+
+//for the weather part
+Route::post('/weather/',[WeatherController::class,'getWeather'])->name('weather');
+Route::get('/weather/',[WeatherController::class,'getWeather1'])->name('weather1');
